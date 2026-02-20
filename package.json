@@ -1,0 +1,39 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "db:create": "npm run typeorm migration:run",
+    "db:drop": "npm run typeorm schema:drop",
+    "db:reset": "npm run db:drop && npm run db:create"
+  },
+  "dependencies": {
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "10.4.16",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.3.1",
+    "jsonwebtoken": "9.0.2",
+    "next": "14.0.4",
+    "next-auth": "4.24.5",
+    "postcss": "8.4.32",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "reflect-metadata": "0.1.13",
+    "sqlite3": "5.1.6",
+    "tailwindcss": "3.3.6",
+    "typeorm": "0.3.17",
+    "typescript": "5.3.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/jsonwebtoken": "9.0.5",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0"
+  }
+}
